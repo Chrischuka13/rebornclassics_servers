@@ -14,9 +14,7 @@ const PORT = process.env.PORT;
 // 2. Security & Parser Middleware
 const allowedOrigins = [
     process.env.CLIENT_URL,
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'http://localhost:5174',
+  'https://rebornclothing.vercel.app'
 ].filter(Boolean);
 app.use(cors({
     origin: allowedOrigins,
